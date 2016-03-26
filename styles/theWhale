@@ -1,0 +1,124 @@
+! theWhale
+! (c) 2015 Simon Schwab
+
+*font:                               Ubuntu-10:light
+
+! toolbar ---------
+toolbar:                             raised gradient vertical
+toolbar.color:                       #e0e0e0
+toolbar.colorTo:                     #bcbcbc
+toolbar.borderColor:                 #a3a3a3
+toolbar.borderWidth:                 0
+
+toolbar.iconbar.empty:               sunken gradient vertical
+toolbar.iconbar.empty.color:         #e0e0e0
+toolbar.iconbar.empty.colorTo:       #bcbcbc
+toolbar.iconbar.borderWidth:         0
+
+toolbar.iconbar.focused:             sunken gradient vertical
+toolbar.iconbar.focused.color:       #88acca
+toolbar.iconbar.focused.colorTo:     #7098b8
+toolbar.iconbar.focused.textColor:   white
+
+toolbar.iconbar.unfocused:           raised gradient vertical
+toolbar.iconbar.unfocused.color:     #e0e0e0
+toolbar.iconbar.unfocused.colorTo:   #bcbcbc
+toolbar.iconbar.unfocused.textColor: black
+
+toolbar.clock:                       sunken gradient vertical
+toolbar.clock.color:                 #e0e0e0
+toolbar.clock.colorTo:               #bcbcbc
+toolbar.clock.textColor:             black
+
+toolbar.button:                      parentRelative
+toolbar.button.picColor:             #a3a3a3
+
+toolbar.button.pressed:              sunken solid
+toolbar.button.pressed.color:        #e0e0e0
+toolbar.button.pressed.picColor:     #a3a3a3
+
+toolbar.workspace.textColor:         black
+
+toolbar.label:                       parentRelative
+toolbar.label.textColor:             white
+
+toolbar.windowLabel:                 parentRelative
+toolbar.windowLabel.textColor:       white
+
+! menu ---------
+menu.title:                          raised gradient vertical
+menu.title.color:                    #88acca
+menu.title.colorTo:                  #7098b8
+menu.title.textColor:                white
+
+menu.borderColor:                    #a3a3a3
+menu.borderWidth:                    1
+
+menu.frame:                          flat gradient vertical
+menu.frame.color:                    #e0e0e0
+menu.frame.colorTo:                  #bcbcbc
+menu.frame.textColor:                black
+
+menu.hilite:                         flat gradient vertical
+menu.hilite.color:                   #88acca
+menu.hilite.colorTo:                 #7098b8
+menu.hilite.textColor:               white
+
+menu.bullet:                         triangle
+menu.bullet.position:                right
+
+! window --------------
+window.title.focus:             raised gradient vertical
+window.title.focus.color:       #88acca
+window.title.focus.colorTo:     #7098b8
+window.title.unfocus:           raised gradient vertical
+window.title.unfocus.color:     #e0e0e0
+window.title.unfocus.colorTo:   #bcbcbc
+
+window.label.focus:             sunken gradient vertical
+window.label.focus.color:       #88acca
+window.label.focus.colorTo:     #7098b8
+window.label.focus.textColor:   white
+window.label.unfocus:           sunken gradient vertical
+window.label.unfocus.color:     #e0e0e0
+window.label.unfocus.colorTo:   #bcbcbc
+window.label.unfocus.textColor: black
+
+window.button.focus:            raised gradient vertical
+window.button.focus.color:      #88acca
+window.button.focus.colorTo:    #7098b8
+window.button.focus.picColor:   white
+window.button.unfocus:          raised gradient vertical
+window.button.unfocus.color:    #e0e0e0
+window.button.unfocus.colorTo:  #bcbcbc
+window.button.unfocus.picColor: black
+window.button.pressed:          sunken gradient vertical
+window.button.pressed.color:    #88acca
+window.button.pressed.colorTo:  #7098b8
+
+window.handle.focus:            raised gradient vertical
+window.handle.focus.color:      #88acca
+window.handle.focus.colorTo:    #7098b8
+window.handle.unfocus:          raised gradient vertical
+window.handle.unfocus.color:    #e0e0e0
+window.handle.unfocus.colorTo:  #bcbcbc
+
+window.grip.focus:              sunken gradient vertical
+window.grip.focus.color:        #88acca
+window.grip.focus.colorTo:      #7098b8
+window.grip.unfocus:            sunken gradient vertical
+window.grip.unfocus.color:      #e0e0e0
+window.grip.unfocus.colorTo:    #bcbcbc
+
+! -------
+toolbar.justify:                     left
+window.justify:                      center
+menu.title.justify:                  center
+menu.frame.justify:                  left
+menu.itemHeight:                     22
+
+borderColor:                         black
+borderWidth:                         1
+bevelWidth:                          2
+frameWidth:                          1
+handleWidth:                         5

@@ -1,0 +1,111 @@
+! adwaita-dark
+! (c) 2015 Simon Schwab
+
+*font:                               Ubuntu-10:light
+
+! toolbar ---------
+toolbar:                             flat
+toolbar.color:                       black
+toolbar.iconbar.borderColor:         black
+
+toolbar.button:                      parentRelative
+toolbar.button.picColor:             white
+
+toolbar.button.pressed:              sunken solid
+toolbar.button.pressed.color:        #1b1b1b
+toolbar.button.pressed.picColor:     white
+
+toolbar.clock:                       parentRelative
+toolbar.clock.textColor:             white
+
+toolbar.label:                       parentRelative
+toolbar.label.textColor:             white
+
+toolbar.windowLabel:                 parentRelative
+toolbar.windowLabel.textColor:       white
+
+! menu ---------
+menu.title:                          flat gradient vertical
+menu.title.color:                    #404848
+menu.title.colorTo:                  #2f3333
+menu.title.textColor:                white
+
+menu.borderColor:                    #5f5f5f
+
+menu.frame:                          flat
+menu.frame.color:                    #393f3f
+menu.frame.textColor:                white
+
+menu.hilite:                         flat solid
+menu.hilite.color:                   #4a90d9
+menu.hilite.textColor:               white
+
+menu.bullet:                         triangle
+menu.bullet.position:                right
+
+! window --------------
+window.title.focus:                  flat gradient vertical
+window.title.focus.color:            #313131
+window.title.focus.colorTo:          #252525
+
+window.label.focus:                  parentRelative
+window.label.focus.textColor:        white
+
+window.button.focus:                 flat gradient vertical
+window.button.focus.color:           #313131
+window.button.focus.colorTo:         #252525
+window.button.focus.picColor:        white
+
+window.button.pressed:               sunken solid
+window.button.pressed.color:         #333333
+window.button.pressed.picColor:      white
+
+window.handle.focus:                 flat gradient vertical
+window.handle.focus.color:           #313131
+window.handle.focus.colorTo:         #252525
+
+window.grip.focus:                   flat gradient vertical
+window.grip.focus.color:             #313131
+window.grip.focus.colorTo:           #252525
+
+window.frame.focus:                  flat solid
+window.frame.focus.color:            white
+
+window.borderColor:                  #5f5f5f
+
+! unfocused
+window.title.unfocus:                flat gradient vertical
+window.title.unfocus.color:          #ededed
+window.title.unfocus.colorTo:        #d4d4d4
+
+window.label.unfocus:                parentrelative
+window.label.unfocus.textColor:      #949494
+
+window.handle.unfocus:               flat gradient vertical
+window.handle.unfocus.color:         #ededed
+window.handle.unfocus.colorTo:       #d4d4d4
+
+window.grip.unfocus:                 flat gradient vertical
+window.grip.unfocus.color:           #ededed
+window.grip.unfocus.colorTo:         #d4d4d4
+
+window.frame.unfocus:                flat solid
+window.frame.unfocus.color:          white
+
+window.button.unfocus:               flat gradient vertical
+window.button.unfocus.color:         #ededed
+window.button.unfocus.colorTo:       #d4d4d4
+window.button.unfocus.picColor:      #949494
+
+! -------
+toolbar.justify:                     left
+window.justify:                      center
+menu.title.justify:                  center
+menu.frame.justify:                  left
+menu.itemHeight:                     22
+
+borderColor:                         black
+borderWidth:                         1
+bevelWidth:                          1
+frameWidth:                          1
+handleWidth:                         4

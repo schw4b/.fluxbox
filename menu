@@ -1,0 +1,98 @@
+[begin] (simon)
+
+  [exec] (Terminal) 	{lxterminal}       <~/.fluxbox/icon/terminal.xpm>
+  [exec] (Chromium)     {~/bin/browser}    <~/.fluxbox/icon/chromium-browser.png>
+  [exec] (Sylpheed)     {sylpheed}         <~/.fluxbox/icon/gmail.png>
+  [exec] (PCManFM)      {pcmanfm}          <~/.fluxbox/icon/system-file-manager.png>
+  [exec] (Geany)        {geany}            <~/.fluxbox/icon/accessories-text-editor.png>
+  [exec] (Gimp)         {gimp}             <~/.fluxbox/icon/gimp.png>
+  [exec] (Firefox)      {firefox}          <~/.fluxbox/icon/firefox.png>
+  [exec] (Skype)        {skype}            <~/.fluxbox/icon/skype.png>
+  [exec] (Transmission) {transmission-gtk} <~/.fluxbox/icon/transmission.png>
+  [exec] (FileZilla)    {filezilla}        <~/.fluxbox/icon/filezilla.png>
+  [exec] (VirtualBox)   {virtualbox}       <~/.fluxbox/icon/virtualbox.png>  
+  [exec] (Scribus)      {scribus}          <~/.fluxbox/icon/scribus.png>
+  [exec] (EasyTAG)      {easytag}          <~/.fluxbox/icon/easytag.png>
+  [exec] (Remmina)      {remmina}          <~/.fluxbox/icon/preferences-desktop-remote-desktop.png>
+  [exec] (X2Go Client)  {x2goclient}       <~/.fluxbox/icon/preferences-desktop-remote-desktop.png>
+  
+  [submenu] (Program Menu)
+    [include] (/etc/X11/fluxbox/fluxbox-menu)
+  [end]
+  
+  [separator]
+
+  [submenu] (Screens)
+    [exec] (carbon: Clone 768)       {xrandr --output DP1   --mode 1024x768   --same-as  LVDS1 --output LVDS1 --mode 1024x768}
+    [exec] (carbon: Clone HDMI)      {xrandr --output HDMI1 --mode 1024x768   --same-as  LVDS1 --output LVDS1 --mode 1024x768}
+    [exec] (carbon: Present HDMI)    {xrandr --output HDMI1 --mode 1920x1080i --right-of LVDS1 --output LVDS1 --auto --primary}
+    [exec] (carbon: IDH)             {xrandr --output DP1   --auto --output LVDS1 --off}
+    [exec] (carbon: Lakeside/TV)     {xrandr --output HDMI1 --auto --output LVDS1 --off}
+    [separator]
+    [exec] (alderaan: 3 screens) {xrandr --output DP-0 --auto --primary --output DVI-I-0 --auto --left-of DP-0 --output DP-3 --auto --right-of DP-0}
+    [exec] (alderaan: 1 screen)  {xrandr --output DP-0 --auto --primary --output DVI-I-0 --off --output DP-3 --off}
+  [end]
+
+  [submenu] (Science)
+    [exec] (MATLAB)   	{xterm -fn 7x13 -e ~/opt/matlab/bin/matlab} <~/.fluxbox/more/matlab.png>
+    [exec] (RStudio)    {rstudio}              <~/.fluxbox/more/rstudio.png>
+    [exec] (Mendeley)   {mendeleydesktop}      <~/.fluxbox/more/mendeleydesktop.png>
+    [exec] (JabRef)     {~/env/bin/jabref}     <~/.fluxbox/more/jabref.png>
+    [exec] (Talairach)  {~/env/bin/talairach}  <~/.fluxbox/more/java.png>
+    [exec] (MRICron)    {mricron}              <~/.fluxbox/more/mricron.png>
+    [exec] (MRIConvert) {MRIConvert}           <~/.fluxbox/more/mriconvert.png>
+    [exec] (Mango)      {~/env/bin/mango}      <~/.fluxbox/more/java.png>
+  [end]
+
+  [submenu] (Tools)
+  
+    [exec] (Screenruler)               {screenruler}
+    [exec] (Screenshot)                {gnome-screenshot -a}
+    [exec] (Screenshot (window\)) {xwd -out ~/screen.xwd; convert ~/screen.xwd ~/screen.png; rm ~/screen.xwd}
+      
+    [submenu] (System)
+      [exec] (Control Center)      {unity-control-center}
+      [exec] (System Informaton)   {hardinfo}
+      [exec] (Sound)               {pavucontrol}
+      [exec] (Software & Updates)  {gksu software-properties-gtk}
+      [exec] (Printers)            {gksu system-config-printer}
+      [exec] (Monitor Settings)    {lxrandr}
+      [exec] (Appearance)          {lxappearance}
+      [exec] (Nvidia)              {nvidia-settings}
+      [exec] (Disks)               {gksu gnome-disks}
+      [exec] (Software Updater)    {gksu update-manager}
+      [exec] (Power Manager)       {xfce4-power-manager-settings}
+      [exec] (Seahorse)            {seahorse}
+    [end]
+    
+    [submenu] (Background)
+      [submenu] (Pattern)
+        [wallpapers] (~/.fluxbox/pattern) {fbsetbg -t}
+      [end]
+      [submenu] (Wallpapers)
+        [wallpapers] (~/.fluxbox/wallpapers) {fbsetbg -a}
+      [end]
+      [submenu] (Ubuntu)
+        [wallpapers] (/usr/share/backgrounds) {fbsetbg -a}
+      [end]
+    [end]
+    
+  [end]
+  
+  [submenu] (Games)
+    [exec] (FlightGear)   {fgrun}            <~/.fluxbox/more/flightgear.png>
+    [exec] (Mumble)       {mumble}           <~/.fluxbox/more/mumble.png>
+    [exec] (RMD)      {gtk-recordmydesktop}  <~/.fluxbox/more/gtk-recordmydesktop.png>
+  [end]
+  
+  [restart] (Restart)
+  
+  [submenu] (Exit)
+    [exec] (Lock)    {xscreensaver-command -lock}              <~/.fluxbox/more/lock.png>
+    [exec] (Suspend) {xterm -e sudo /usr/sbin/pm-suspend}      <~/.fluxbox/icon/application-exit.png>
+    [exec] (Exit)    {~/bin/mount.encfs -u; killall fluxbox}   <~/.fluxbox/icon/application-exit.png>
+    [exec] (Reboot)  {xterm -e sudo /sbin/reboot}              <~/.fluxbox/icon/application-exit.png>
+    [exec] (Halt)    {xterm -e 'sudo /sbin/shutdown -h 0'}     <~/.fluxbox/icon/application-exit.png>
+  [end]
+
+[end]

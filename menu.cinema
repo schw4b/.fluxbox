@@ -1,0 +1,87 @@
+[begin] (cinema)
+
+  [exec] (Terminal) 	{xterm -fn 7x13 -fg white -bg black}         <~/.fluxbox/icons/utilities-terminal.png>
+  [exec] (PCManFM)      {pcmanfm}                                    <~/.fluxbox/icons/pcmanfm.png>
+  [exec] (Gedit)        {gedit}                                      <~/.fluxbox/icons/text-editor.png>
+  [exec] (Firefox)      {firefox}                                    <~/.fluxbox/icons/firefox.png>
+  [exec] (Transmission) {transmission-gtk}                           <~/.fluxbox/icons/transmission.png>
+  [exec] (cmus)         {xterm -fn 7x13 -fg black -bg white -e cmus} <~/.fluxbox/icons/utilities-terminal.png>
+  [exec] (gPodder)      {gpodder}                                    <~/.fluxbox/icons/gpodder.png>
+  [separator]
+  
+  [submenu] (Browse Movies)
+     [exec] (All) {eog ~/Media/Pictures/Movies/*.jpg}     <~/.fluxbox/icons/eog.png>
+     [exec] (DVD) {eog ~/Media/Pictures/Movies/*dvd.jpg}  <~/.fluxbox/icons/eog.png>
+     [exec] (HD)  {eog ~/Media/Pictures/Movies/*hd.jpg}   <~/.fluxbox/icons/eog.png>
+     [exec] (TV)  {eog ~/Media/Pictures/TV/*.jpg}  <~/.fluxbox/icons/eog.png>
+     [exec] (New) {eog ~/Media/Pictures/New/*.jpg}        <~/.fluxbox/icons/eog.png>
+  [end]
+
+  [submenu] (DVD Movies)
+    [wallpapers] (~/Media/DVD) {~/bin/dmplayer}
+  [end]
+
+  [submenu] (HD Movies)
+    [wallpapers] (~/Media/HD)  {~/bin/dmplayer}
+  [end]
+
+  [submenu] (TV Shows)
+    [submenu] (Hannibal (Season 1\))
+      [wallpapers] (~/Media/TV/Hannibal.S01)         {~/bin/dmplayer}
+    [end]
+
+    [submenu] (House of Cards (Season 2\))
+      [wallpapers] (~/Media/TV/House.of.Cards.S02)   {~/bin/dmplayer}
+    [end]
+
+    [submenu] (The Americans (Season 1\))
+      [wallpapers] (~/Media/TV/The.Americans.S01)    {~/bin/dmplayer}
+    [end]
+
+    [submenu] (The Americans (Season 2\))
+      [wallpapers] (~/Media/TV/The.Americans.S02)    {~/bin/dmplayer}
+    [end]
+
+    [submenu] (The Following (Season 1\))
+      [wallpapers] (~/Media/TV/The.Following.S01)    {~/bin/dmplayer}
+    [end]
+
+    [submenu] (True Detective (Season 1\))
+      [wallpapers] (~/Media/TV/True.Detective.S01)   {~/bin/dmplayer}
+    [end]
+
+  [end]
+
+  [submenu] (Music)
+    [wallpapers] (~/Media/Music)                     {~/bin/dmplayer}
+  [end]
+  [submenu] (Trailer)
+    [wallpapers] (~/Media/Trailer)                   {~/bin/dmplayer}
+  [end]
+  [submenu] (Sound)
+    [wallpapers] (~/Media/Sound)                     {~/bin/dmplayer}
+  [end]
+
+ [separator]
+ 
+ [submenu] (Super Nintendo)
+  [exec] (Super Mario All Stars) {zsnes ~/nes/mario.smc} <~/.fluxbox/icons/zsnes.png>
+ [end]
+
+ [separator]
+
+  [submenu] (Settings)
+    [exec] (Control Center)    {unity-control-center}
+    [exec] (NVIDIA)    {nvidia-settings}
+  [end]
+  [submenu] (Wallpapers)
+    [wallpapers] (~/Media/Pictures/Wallpapers) {fbsetbg -a}
+  [end]
+ 
+  [submenu] (Program Menu)
+    [include] (/etc/X11/fluxbox/fluxbox-menu)
+  [end]
+  [exec] (Lock)    {gnome-screensaver-command -l} <~/.fluxbox/icons/exit.png>
+  [exec] (Shutdown)    {xterm -e 'sudo /sbin/shutdown -h 0'} <~/.fluxbox/icons/exit.png>
+
+[end]
