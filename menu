@@ -1,7 +1,7 @@
 [begin] (simon)
 
   [exec] (Terminal) 	{lxterminal}       <~/.fluxbox/icon/terminal.xpm>
-  [exec] (Chromium)     {~/bin/browser}    <~/.fluxbox/icon/chromium-browser.png>
+  [exec] (Chrome)       {google-chrome}    <~/.fluxbox/icon/google-chrome.png>
   [exec] (Sylpheed)     {sylpheed}         <~/.fluxbox/icon/gmail.png>
   [exec] (PCManFM)      {pcmanfm}          <~/.fluxbox/icon/system-file-manager.png>
   [exec] (Geany)        {geany}            <~/.fluxbox/icon/accessories-text-editor.png>
