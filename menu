@@ -1,42 +1,44 @@
 [begin] (Apps)
 
-  [exec] (Terminal) 	{lxterminal}       <~/.fluxbox/icon/terminal.png>
-  [exec] (Chrome)       {google-chrome}    <~/.fluxbox/icon/google-chrome.png>
-  [exec] (PCManFM)      {pcmanfm}          <~/.fluxbox/icon/system-file-manager.png>
-  [exec] (Sylpheed)     {sylpheed}         <~/.fluxbox/icon/gmail.png>
-  [exec] (Geany)        {geany}            <~/.fluxbox/icon/accessories-text-editor.png>
+  [exec] (Terminal) 	{lxterminal}       <~/.fluxbox/icons/lxterminal.png>
+  [exec] (Chrome)       {google-chrome}    <~/.fluxbox/icons/google-chrome.png>
+  [exec] (PCManFM)      {pcmanfm}          <~/.fluxbox/icons/xfce-filemanager.png>
+  [exec] (Sylpheed)     {sylpheed}         <~/.fluxbox/icons/sylpheed.png>
+  [exec] (Geany)        {geany}            <~/.fluxbox/icons/geany.png>
+  [exec] (Writer)       {lowriter}         <~/.fluxbox/icons/libreoffice-writer.png>
   [separator]
 
   [submenu] (Science)
     [exec] (MATLAB)   	{xterm -fn 7x13 -e ~/opt/matlab/bin/matlab} <~/.fluxbox/more/matlab.png>
     [exec] (RStudio)    {rstudio}              <~/.fluxbox/more/rstudio.png>  
-    [exec] (Eclipse)    {~/opt/eclipse/eclipse}<~/.fluxbox/icon/eclipse.png>  
+    [exec] (Eclipse)    {~/opt/eclipse/eclipse}<~/.fluxbox/icons/eclipse.png>  
     [separator]  
-    [exec] (Mendeley)   {mendeleydesktop}      <~/.fluxbox/icon/mendeleydesktop.png>
+    [exec] (Mendeley)   {mendeleydesktop}      <~/.fluxbox/icons/mendeleydesktop.png>
     [exec] (JabRef)     {~/env/bin/jabref}     <~/.fluxbox/more/jabref.png>
     [separator]
-    [exec] (Talairach)  {~/env/bin/talairach}  <~/.fluxbox/icon/sun-java.png>
+    [exec] (FSLView)    {fslview}  
+    [exec] (Talairach)  {~/env/bin/talairach}  <~/.fluxbox/icons/sun-java.png>
     [exec] (MRICron)    {mricron}              <~/.fluxbox/more/mricron.png>
     [exec] (MRIConvert) {MRIConvert}           <~/.fluxbox/more/mriconvert.png>
-    [exec] (Mango)      {~/env/bin/mango}      <~/.fluxbox/icon/sun-java.png>
+    [exec] (Mango)      {~/env/bin/mango}      <~/.fluxbox/icons/sun-java.png>
   [end]
 
   [submenu] (More Apps)
-    [exec] (Firefox)      {firefox}          <~/.fluxbox/icon/firefox.png>
-    [exec] (Gimp)         {gimp}             <~/.fluxbox/icon/gimp.png>
-    [exec] (Skype)        {skype}            <~/.fluxbox/icon/skype.png>
-    [exec] (Transmission) {transmission-gtk} <~/.fluxbox/icon/transmission.png>
-    [exec] (FileZilla)    {filezilla}        <~/.fluxbox/icon/filezilla.png>
-    [exec] (Scribus)      {scribus}          <~/.fluxbox/icon/scribus.png>
-    [exec] (EasyTAG)      {easytag}          <~/.fluxbox/icon/easytag.png>
+    [exec] (Firefox)      {firefox}          <~/.fluxbox/icons/firefox.png>
+    [exec] (Gimp)         {gimp}             <~/.fluxbox/icons/gimp.png>
+    [exec] (Skype)        {skype}            <~/.fluxbox/icons/skype.png>
+    [exec] (Transmission) {transmission-gtk} <~/.fluxbox/icons/transmission.png>
+    [exec] (FileZilla)    {filezilla}        <~/.fluxbox/icons/filezilla.png>
+    [exec] (Scribus)      {scribus}          <~/.fluxbox/icons/scribus.png>
+    [exec] (EasyTAG)      {easytag}          <~/.fluxbox/icons/easytag.png>
     [separator]
-    [exec] (VirtualBox)   {virtualbox}       <~/.fluxbox/icon/virtualbox.png>  
-    [exec] (X2Go Client)  {x2goclient}       <~/.fluxbox/icon/preferences-desktop-remote-desktop.png>
-    [exec] (Remmina)      {remmina}          <~/.fluxbox/icon/preferences-desktop-remote-desktop.png>
+    [exec] (VirtualBox)   {virtualbox}       <~/.fluxbox/icons/virtualbox.png>  
+    [exec] (X2Go Client)  {x2goclient}       <~/.fluxbox/icons/preferences-desktop-remote-desktop.png>
+    [exec] (Remmina)      {remmina}          <~/.fluxbox/icons/preferences-desktop-remote-desktop.png>
     [separator]
     [exec] (FlightGear)   {fgrun}            <~/.fluxbox/more/flightgear.png>
     [exec] (Mumble)       {mumble}           <~/.fluxbox/more/mumble.png>
-    [exec] (RMD)      {gtk-recordmydesktop}  <~/.fluxbox/more/gtk-recordmydesktop.png>    
+    [exec] (RMD)      {gtk-recordmydesktop}  <~/.fluxbox/icons/gtk-recordmydesktop.png>    
   [end]
 
   [submenu] (Tools)
@@ -91,11 +93,11 @@
   [restart] (Restart)
   
   [submenu] (Exit)
-    [exec] (Lock)    {xscreensaver-command -lock}              <~/.fluxbox/more/lock.png>
-    [exec] (Suspend) {xterm -e sudo /usr/sbin/pm-suspend}      <~/.fluxbox/icon/application-exit.png>
-    [exec] (Exit)    {~/bin/mount.encfs -u; killall fluxbox}   <~/.fluxbox/icon/application-exit.png>
-    [exec] (Reboot)  {xterm -e sudo /sbin/reboot}              <~/.fluxbox/icon/application-exit.png>
-    [exec] (Halt)    {xterm -e 'sudo /sbin/shutdown -h 0'}     <~/.fluxbox/icon/application-exit.png>
+    [exec] (Lock)    {xscreensaver-command -lock}              <~/.fluxbox/icons/screensaver.png>
+    [exec] (Suspend) {xterm -e sudo /usr/sbin/pm-suspend}      <~/.fluxbox/icons/gnome-session-halt.png>
+    [exec] (Exit)    {~/bin/mount.encfs -u; killall fluxbox}   <~/.fluxbox/icons/gnome-session-halt.png>
+    [exec] (Reboot)  {xterm -e sudo /sbin/reboot}              <~/.fluxbox/icons/gnome-session-halt.png>
+    [exec] (Halt)    {xterm -e 'sudo /sbin/shutdown -h 0'}     <~/.fluxbox/icons/gnome-session-halt.png>
   [end]
 
 [end]

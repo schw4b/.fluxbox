@@ -83,8 +83,8 @@ Mod1 space :WindowMenu
 Control Mod1 Delete :Exit
 
 # change to previous/next workspace
-Control Mod1 Left :PrevWorkspace
-Control Mod1 Right :NextWorkspace
+Control Left :PrevWorkspace
+Control Right :NextWorkspace
 
 # send the current window to previous/next workspace
 Mod4 Left :SendToPrevWorkspace
@@ -139,3 +139,11 @@ Control Mod4 F12 :TakeToWorkspace 12
 # by simon
 # Mod1 x :ExecCommand xscreensaver-command -lock
 Mod1 x :ExecCommand gnome-screensaver-command -l 
+
+# Tiling
+Control Mod1 Left :MacroCmd {ResizeTo 50% 100%} {MoveTo 00 00 Left}
+Control Mod1 Right :MacroCmd {ResizeTo 50% 100%} {MoveTo 00 00 Right}
+Control Mod1 Up :MacroCmd {ResizeTo 100% 50%} {MoveTo 00 00 Up}
+Control Mod1 Down :MacroCmd {ResizeTo 100% 50%} {MoveTo 00 00 Bottom}
+Control Mod1 Return :ToggleCmd {Maximize} {Restore}
+
