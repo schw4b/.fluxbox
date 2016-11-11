@@ -36,6 +36,7 @@
     [exec] (X2Go Client)  {x2goclient}       <~/.fluxbox/icons/preferences-desktop-remote-desktop.png>
     [exec] (Remmina)      {remmina}          <~/.fluxbox/icons/preferences-desktop-remote-desktop.png>
     [separator]
+    [exec] (Steam)   {steam}
     [exec] (FlightGear)   {fgrun}            <~/.fluxbox/more/flightgear.png>
     [exec] (Mumble)       {mumble}           <~/.fluxbox/more/mumble.png>
     [exec] (RMD)      {gtk-recordmydesktop}  <~/.fluxbox/icons/gtk-recordmydesktop.png>    
