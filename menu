@@ -6,6 +6,7 @@
   [exec] (Sylpheed)     {sylpheed}         <~/.fluxbox/icons/sylpheed.png>
   [exec] (Geany)        {geany}            <~/.fluxbox/icons/geany.png>
   [exec] (Writer)       {lowriter}         <~/.fluxbox/icons/libreoffice-writer.png>
+  [exec] (Rhythmbox)    {rhythmbox}        <~/.fluxbox/icons/rhythmbox.png>
   [separator]
 
   [submenu] (Science)
@@ -90,7 +91,8 @@
   [end]
   
   [separator]
-  [exec] (Set screen IDH)    {xrandr --output DP1   --auto --output LVDS1 --off}
+  [exec] (Set screen)    {xrandr --output DP1   --auto --output LVDS1 --off}
+  [exec] (Switch mouse)      {xmodmap -e "pointer =   3 2 1"} 
   [restart] (Restart)
   
   [submenu] (Exit)
