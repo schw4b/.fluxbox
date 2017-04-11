@@ -91,8 +91,8 @@
   [end]
   
   [separator]
-  [exec] (Set screen)    {xrandr --output DP1   --auto --output LVDS1 --off}
-  [exec] (Switch mouse)      {xmodmap -e "pointer =   3 2 1"} 
+  [exec] (Set screen)    {xrandr --output DP1 --auto --output DP-0 --auto --output LVDS1 --off --output DVI-I-0 --off}
+  [exec] (Switch mouse)  {xmodmap -e "pointer =   3 2 1"} 
   [restart] (Restart)
   
   [submenu] (Exit)
