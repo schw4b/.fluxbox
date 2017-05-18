@@ -5,6 +5,7 @@
   [exec] (PCManFM)      {pcmanfm}          <~/.fluxbox/icons/xfce-filemanager.png>
   [exec] (Sylpheed)     {sylpheed}         <~/.fluxbox/icons/sylpheed.png>
   [exec] (Geany)        {geany}            <~/.fluxbox/icons/geany.png>
+  [exec] (Atom)         {atom}             <~/.fluxbox/icons/atom.png>       
   [exec] (Writer)       {lowriter}         <~/.fluxbox/icons/libreoffice-writer.png>
   [exec] (Rhythmbox)    {rhythmbox}        <~/.fluxbox/icons/rhythmbox.png>
   [separator]
@@ -92,7 +93,8 @@
   
   [separator]
   [exec] (Set screen)    {xrandr --output DP1   --auto --output LVDS1 --off}
-  [exec] (Switch mouse)      {xmodmap -e "pointer =   3 2 1"} 
+  [exec] (mouse left)      {xmodmap -e "pointer =   3 2 1"}
+  [exec] (mouse right)     {xmodmap -e "pointer =   1 2 3"}
   [restart] (Restart)
   
   [submenu] (Exit)
