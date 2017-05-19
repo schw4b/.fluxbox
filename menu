@@ -92,10 +92,11 @@
   [end]
   
   [separator]
-  [exec] (Set screen)    {xrandr --output DP1   --auto --output LVDS1 --off}
-  [exec] (mouse left)      {xmodmap -e "pointer =   3 2 1"}
-  [exec] (mouse right)     {xmodmap -e "pointer =   1 2 3"}
-  [restart] (Restart)
+  [exec] (Screen to monitor) {xrandr --output DP1   --auto --output LVDS1 --off}
+  [exec] (Screen to laptop)  {xrandr --output DP1   --off  --output LVDS1 --auto}
+  [exec] (Mouse is left)     {xmodmap -e "pointer =   3 2 1"}
+  [exec] (Mouse is right)    {xmodmap -e "pointer =   1 2 3"}
+  [restart] (Refresh Fluxbox)
   
   [submenu] (Exit)
     [exec] (Lock)    {xscreensaver-command -lock}              <~/.fluxbox/icons/screensaver.png>
