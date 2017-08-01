@@ -14,7 +14,7 @@
 dropbox start &
 nm-applet &
 xfce4-power-manager &
-skype &
+skypeforlinux &
 fbsetbg -l
 
 # And last but not least we start fluxbox.

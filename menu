@@ -28,7 +28,7 @@
   [submenu] (More Apps)
     [exec] (Firefox)      {firefox}          <~/.fluxbox/icons/firefox.png>
     [exec] (Gimp)         {gimp}             <~/.fluxbox/icons/gimp.png>
-    [exec] (Skype)        {skype}            <~/.fluxbox/icons/skype.png>
+    [exec] (Skype)        {skypeforlinux}    <~/.fluxbox/icons/skype.png>
     [exec] (Transmission) {transmission-gtk} <~/.fluxbox/icons/transmission.png>
     [exec] (FileZilla)    {filezilla}        <~/.fluxbox/icons/filezilla.png>
     [exec] (Scribus)      {scribus}          <~/.fluxbox/icons/scribus.png>
