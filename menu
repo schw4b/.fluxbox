@@ -3,7 +3,7 @@
   [exec] (Terminal) 	{lxterminal}       <~/.fluxbox/icons/lxterminal.png>
   [exec] (Chrome)       {google-chrome}    <~/.fluxbox/icons/google-chrome.png>
   [exec] (PCManFM)      {pcmanfm}          <~/.fluxbox/icons/xfce-filemanager.png>
-  [exec] (Sylpheed)     {sylpheed}         <~/.fluxbox/icons/sylpheed.png>
+  [exec] (Mail)         {thunderbird}         <~/.fluxbox/icons/sylpheed.png>
   [exec] (Geany)        {geany}            <~/.fluxbox/icons/geany.png>
   [exec] (Atom)         {atom}             <~/.fluxbox/icons/atom.png>       
   [exec] (Writer)       {lowriter}         <~/.fluxbox/icons/libreoffice-writer.png>
@@ -18,7 +18,8 @@
     [exec] (Mendeley)   {mendeleydesktop}      <~/.fluxbox/icons/mendeleydesktop.png>
     [exec] (JabRef)     {~/env/bin/jabref}     <~/.fluxbox/more/jabref.png>
     [separator]
-    [exec] (FSLView)    {fslview}  
+    [exec] (FSLView)    {fslview}
+    [exec] (FSLeyes)    {FSLeyes} 
     [exec] (Talairach)  {~/env/bin/talairach}  <~/.fluxbox/icons/sun-java.png>
     [exec] (MRICron)    {mricron}              <~/.fluxbox/more/mricron.png>
     [exec] (MRIConvert) {MRIConvert}           <~/.fluxbox/more/mriconvert.png>
@@ -92,6 +93,7 @@
   [end]
   
   [separator]
+  [exec] (Screenshot)        {gnome-screenshot --interactive -a}
   [exec] (Screen to monitor) {xrandr --output DP1   --auto --output LVDS1 --off}
   [exec] (Screen to laptop)  {xrandr --output DP1   --off  --output LVDS1 --auto}
   [exec] (Mouse is left)     {xmodmap -e "pointer =   3 2 1"}
