@@ -3,7 +3,6 @@
   [exec] (Terminal) 	{lxterminal}       <~/.fluxbox/icons/lxterminal.png>
   [exec] (Chrome)       {google-chrome}    <~/.fluxbox/icons/google-chrome.png>
   [exec] (PCManFM)      {pcmanfm}          <~/.fluxbox/icons/xfce-filemanager.png>
-  [exec] (Mail)         {thunderbird}         <~/.fluxbox/icons/sylpheed.png>
   [exec] (Geany)        {geany}            <~/.fluxbox/icons/geany.png>
   [exec] (Atom)         {atom}             <~/.fluxbox/icons/atom.png>       
   [exec] (Writer)       {lowriter}         <~/.fluxbox/icons/libreoffice-writer.png>
@@ -27,6 +26,20 @@
     [exec] (Mango)      {~/env/bin/mango}      <~/.fluxbox/icons/sun-java.png>
   [end]
 
+  [submenu] (System)
+    [exec] (Control Center)      {unity-control-center}
+    [exec] (Monitor Settings)    {lxrandr}
+    [exec] (System Informaton)   {hardinfo}
+    [exec] (Software & Updates)  {gksu software-properties-gtk}
+    [exec] (Printers)            {gksu system-config-printer}
+    [exec] (Appearance)          {lxappearance}
+    [exec] (Nvidia)              {nvidia-settings}
+    [exec] (Disks)               {gksu gnome-disks}
+    [exec] (Software Updater)    {gksu update-manager}
+    [exec] (Power Manager)       {xfce4-power-manager-settings}
+    [exec] (Seahorse)            {seahorse}
+  [end]
+
   [submenu] (More Apps)
     [exec] (Firefox)      {firefox}          <~/.fluxbox/icons/firefox.png>
     [exec] (Gimp)         {gimp}             <~/.fluxbox/icons/gimp.png>
@@ -40,10 +53,10 @@
     [exec] (X2Go Client)  {x2goclient}       <~/.fluxbox/icons/preferences-desktop-remote-desktop.png>
     [exec] (Remmina)      {remmina}          <~/.fluxbox/icons/preferences-desktop-remote-desktop.png>
     [separator]
-    [exec] (Steam)   {steam}
+    [exec] (Steam)        {steam}
     [exec] (FlightGear)   {fgrun}            <~/.fluxbox/more/flightgear.png>
     [exec] (Mumble)       {mumble}           <~/.fluxbox/more/mumble.png>
-    [exec] (RMD)      {gtk-recordmydesktop}  <~/.fluxbox/icons/gtk-recordmydesktop.png>    
+    [exec] (RMD)          {gtk-recordmydesktop}  <~/.fluxbox/icons/gtk-recordmydesktop.png>    
   [end]
 
   [submenu] (Tools)
@@ -58,6 +71,7 @@
       [exec] (alderaan: 3 screens) {xrandr --output DP-0 --auto --primary --output DVI-I-0 --auto --left-of DP-0 --output DP-3 --auto --right-of DP-0}
       [exec] (alderaan: 1 screen)  {xrandr --output DP-0 --auto --primary --output DVI-I-0 --off --output DP-3 --off}
     [end]
+
     [submenu] (Background)
       [submenu] (Pattern)
         [wallpapers] (~/.fluxbox/pattern) {fbsetbg -t}
@@ -69,20 +83,6 @@
         [wallpapers] (/usr/share/backgrounds) {fbsetbg -a}
       [end]
     [end]      
-    [submenu] (System)
-      [exec] (Control Center)      {unity-control-center}
-      [exec] (System Informaton)   {hardinfo}
-      [exec] (Sound)               {pavucontrol}
-      [exec] (Software & Updates)  {gksu software-properties-gtk}
-      [exec] (Printers)            {gksu system-config-printer}
-      [exec] (Monitor Settings)    {lxrandr}
-      [exec] (Appearance)          {lxappearance}
-      [exec] (Nvidia)              {nvidia-settings}
-      [exec] (Disks)               {gksu gnome-disks}
-      [exec] (Software Updater)    {gksu update-manager}
-      [exec] (Power Manager)       {xfce4-power-manager-settings}
-      [exec] (Seahorse)            {seahorse}
-    [end]
 
     [exec] (Screenruler)               {screenruler}
     [exec] (Screenshot)                {gnome-screenshot -a}
