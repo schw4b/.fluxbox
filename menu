@@ -8,7 +8,7 @@
   [exec] (Writer)       {lowriter}         <~/.fluxbox/icons/libreoffice-writer.png>
   [exec] (Rhythmbox)    {rhythmbox}        <~/.fluxbox/icons/rhythmbox.png>
   [exec] (Papercut)     {~/opt/papercut/pc-client-linux.sh}
-  [exec] (Jalapeno)     {vinagre localhost:5933} <~/.fluxbox/icons/preferences-desktop-remote-desktop.png>
+  [exec] (Jalapeno)     {vinagre localhost:5941} <~/.fluxbox/icons/preferences-desktop-remote-desktop.png>
   [separator]
 
   [submenu] (Science)
