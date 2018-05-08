@@ -43,7 +43,7 @@
   [submenu] (More Apps)
     [exec] (Firefox)      {firefox}          <~/.fluxbox/icons/firefox.png>
     [exec] (Gimp)         {gimp}             <~/.fluxbox/icons/gimp.png>
-    [exec] (Skype)        {skype}            <~/.fluxbox/icons/skype.png>
+    [exec] (Skype)        {skypeforlinux}            <~/.fluxbox/icons/skype.png>
     [exec] (Transmission) {transmission-gtk} <~/.fluxbox/icons/transmission.png>
     [exec] (FileZilla)    {filezilla}        <~/.fluxbox/icons/filezilla.png>
     [exec] (Scribus)      {scribus}          <~/.fluxbox/icons/scribus.png>
@@ -95,18 +95,18 @@
   
   [separator]
   [exec] (Screenshot)        {gnome-screenshot --interactive -a}
-  [exec] (Screen to monitor) {xrandr --output DP1   --auto --output LVDS1 --off}
-  [exec] (Screen to laptop)  {xrandr --output DP1   --off  --output LVDS1 --auto}
+  [exec] (Screen to monitor) {xrandr --output DP-1   --auto --output LVDS-1 --off}
+  [exec] (Screen to laptop)  {xrandr --output DP-1   --off  --output LVDS-1 --auto}
   [exec] (Mouse is left)     {xmodmap -e "pointer =   3 2 1"}
   [exec] (Mouse is right)    {xmodmap -e "pointer =   1 2 3"}
   [restart] (Refresh Fluxbox)
   
   [submenu] (Exit)
-    [exec] (Lock)    {xscreensaver-command -lock}              <~/.fluxbox/icons/screensaver.png>
-    [exec] (Suspend) {xterm -e sudo /usr/sbin/pm-suspend}      <~/.fluxbox/icons/gnome-session-halt.png>
-    [exec] (Exit)    {~/bin/mount.encfs -u; killall fluxbox}   <~/.fluxbox/icons/gnome-session-halt.png>
-    [exec] (Reboot)  {xterm -e sudo /sbin/reboot}              <~/.fluxbox/icons/gnome-session-halt.png>
-    [exec] (Halt)    {xterm -e 'sudo /sbin/shutdown -h 0'}     <~/.fluxbox/icons/gnome-session-halt.png>
+    [exec] (Lock)     {gnome-screensaver-command -l}
+    [exec] (Suspend)  {sudo pm-suspend}
+    [exec] (Exit)     {~/bin/mount.encfs -u; killall fluxbox}
+    [exec] (Reboot)   {~/bin/mount.encfs -u; /sbin/reboot}
+    [exec] (Poweroff) {~/bin/mount.encfs -u; /sbin/halt -p}
   [end]
 
 [end]
