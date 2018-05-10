@@ -7,23 +7,18 @@
   [exec] (Atom)         {atom}             <~/.fluxbox/icons/atom.png>       
   [exec] (Writer)       {lowriter}         <~/.fluxbox/icons/libreoffice-writer.png>
   [exec] (Rhythmbox)    {rhythmbox}        <~/.fluxbox/icons/rhythmbox.png>
-  [exec] (Papercut)     {~/opt/papercut/pc-client-linux.sh}
-  [exec] (Jalapeno)     {vinagre localhost:5965} <~/.fluxbox/icons/preferences-desktop-remote-desktop.png>
+  
   [separator]
 
   [submenu] (Science)
     [exec] (MATLAB)   	{xterm -fn 7x13 -e ~/opt/matlab/bin/matlab} <~/.fluxbox/more/matlab.png>
     [exec] (RStudio)    {rstudio}              <~/.fluxbox/more/rstudio.png>  
     [exec] (Eclipse)    {~/opt/eclipse/eclipse}<~/.fluxbox/icons/eclipse.png>  
-    [separator]  
     [exec] (JabRef)     {~/env/bin/jabref}     <~/.fluxbox/more/jabref.png>
-    [separator]
-    [exec] (FSLView)    {fslview}
-    [exec] (FSLeyes)    {xterm -e ~/opt/FSLeyes/fsleyes} 
-    [exec] (Talairach)  {~/env/bin/talairach}  <~/.fluxbox/icons/sun-java.png>
+    [exec] (FSLeyes)    {fsleyes}
     [exec] (MRICron)    {mricron}              <~/.fluxbox/more/mricron.png>
-    [exec] (MRIConvert) {MRIConvert}           <~/.fluxbox/more/mriconvert.png>
     [exec] (Mango)      {~/env/bin/mango}      <~/.fluxbox/icons/sun-java.png>
+    [exec] (Jalapeno)   {vinagre localhost:5957} <~/.fluxbox/icons/preferences-desktop-remote-desktop.png>
   [end]
 
   [submenu] (System)
@@ -31,10 +26,10 @@
     [exec] (Monitor Settings)    {lxrandr}
     [exec] (System Informaton)   {hardinfo}
     [exec] (Software & Updates)  {gksu software-properties-gtk}
-    [exec] (Printers)            {gksu system-config-printer}
+    [exec] (Printers)            {system-config-printer}
     [exec] (Appearance)          {lxappearance}
     [exec] (Nvidia)              {nvidia-settings}
-    [exec] (Disks)               {gksu gnome-disks}
+    [exec] (Disks)               {xterm -e pkexec gnome-disks}
     [exec] (Software Updater)    {gksu update-manager}
     [exec] (Power Manager)       {xfce4-power-manager-settings}
     [exec] (Seahorse)            {seahorse}
@@ -94,19 +89,22 @@
   [end]
   
   [separator]
-  [exec] (Screenshot)        {gnome-screenshot --interactive -a}
-  [exec] (Screen to monitor) {xrandr --output DP-1   --auto --output LVDS-1 --off}
-  [exec] (Screen to laptop)  {xrandr --output DP-1   --off  --output LVDS-1 --auto}
-  [exec] (Mouse is left)     {xmodmap -e "pointer =   3 2 1"}
-  [exec] (Mouse is right)    {xmodmap -e "pointer =   1 2 3"}
+  [submenu] (Screen)
+    [exec] (to monitor) {xrandr --output DP-1   --auto --output LVDS-1 --off}
+    [exec] (to laptop)  {xrandr --output DP-1   --off  --output LVDS-1 --auto}
+  [end]
+  [submenu] (Mouse)
+    [exec] (is left)     {xmodmap -e "pointer =   3 2 1"}
+    [exec] (is right)    {xmodmap -e "pointer =   1 2 3"}
+  [end]
   [restart] (Refresh Fluxbox)
   
   [submenu] (Exit)
     [exec] (Lock)     {gnome-screensaver-command -l}
     [exec] (Suspend)  {sudo pm-suspend}
-    [exec] (Exit)     {~/bin/mount.encfs -u; killall fluxbox}
-    [exec] (Reboot)   {~/bin/mount.encfs -u; /sbin/reboot}
-    [exec] (Poweroff) {~/bin/mount.encfs -u; /sbin/halt -p}
+    [exec] (Exit)     {~/bin/mount.private -u; killall fluxbox}
+    [exec] (Reboot)   {~/bin/mount.private -u; /sbin/reboot}
+    [exec] (Poweroff) {~/bin/mount.private -u; /sbin/halt -p}
   [end]
 
 [end]
