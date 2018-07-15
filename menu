@@ -1,24 +1,24 @@
 [begin] (Apps)
 
-  [exec] (Terminal) 	{lxterminal}       <~/.fluxbox/icons/lxterminal.png>
-  [exec] (Chrome)       {google-chrome}    <~/.fluxbox/icons/google-chrome.png>
-  [exec] (PCManFM)      {pcmanfm}          <~/.fluxbox/icons/xfce-filemanager.png>
-  [exec] (Geany)        {geany}            <~/.fluxbox/icons/geany.png>
-  [exec] (Atom)         {atom}             <~/.fluxbox/icons/atom.png>       
-  [exec] (Writer)       {lowriter}         <~/.fluxbox/icons/libreoffice-writer.png>
-  [exec] (Rhythmbox)    {rhythmbox}        <~/.fluxbox/icons/rhythmbox.png>
+  [exec] (Terminal) 	{lxterminal}       <~/.fluxbox/icons/apps/lxterminal.png>
+  [exec] (Chrome)       {google-chrome}    <~/.fluxbox/icons/apps/google-chrome.png>
+  [exec] (PCManFM)      {pcmanfm}          <~/.fluxbox/icons/apps/xfce-filemanager.png>
+  [exec] (Geany)        {geany}            <~/.fluxbox/icons/apps/geany.png>
+  [exec] (Atom)         {atom}             <~/.fluxbox/icons/apps/atom.png>       
+  [exec] (Writer)       {lowriter}         <~/.fluxbox/icons/apps/libreoffice-writer.png>
+  [exec] (Spotify)      {spotify}          <~/.fluxbox/icons/web/web-spotify.png>
   
   [separator]
 
   [submenu] (Science)
     [exec] (MATLAB)   	{xterm -fn 7x13 -e ~/opt/matlab/bin/matlab} <~/.fluxbox/more/matlab.png>
     [exec] (RStudio)    {rstudio}              <~/.fluxbox/more/rstudio.png>  
-    [exec] (Eclipse)    {~/opt/eclipse/eclipse}<~/.fluxbox/icons/eclipse.png>  
+    [exec] (Eclipse)    {~/opt/eclipse/eclipse}<~/.fluxbox/icons/apps/eclipse.png>  
     [exec] (JabRef)     {~/env/bin/jabref}     <~/.fluxbox/more/jabref.png>
     [exec] (FSLeyes)    {fsleyes}
     [exec] (MRICron)    {mricron}              <~/.fluxbox/more/mricron.png>
-    [exec] (Mango)      {~/env/bin/mango}      <~/.fluxbox/icons/sun-java.png>
-    [exec] (Jalapeno)   {vinagre localhost:5957} <~/.fluxbox/icons/preferences-desktop-remote-desktop.png>
+    [exec] (Mango)      {~/env/bin/mango}      <~/.fluxbox/icons/apps/sun-java.png>
+    [exec] (Jalapeno)   {vinagre localhost:5904} <~/.fluxbox/icons/apps/preferences-desktop-remote-desktop.png>
   [end]
 
   [submenu] (System)
@@ -36,22 +36,22 @@
   [end]
 
   [submenu] (More Apps)
-    [exec] (Firefox)      {firefox}          <~/.fluxbox/icons/firefox.png>
-    [exec] (Gimp)         {gimp}             <~/.fluxbox/icons/gimp.png>
-    [exec] (Skype)        {skypeforlinux}            <~/.fluxbox/icons/skype.png>
-    [exec] (Transmission) {transmission-gtk} <~/.fluxbox/icons/transmission.png>
-    [exec] (FileZilla)    {filezilla}        <~/.fluxbox/icons/filezilla.png>
-    [exec] (Scribus)      {scribus}          <~/.fluxbox/icons/scribus.png>
-    [exec] (EasyTAG)      {easytag}          <~/.fluxbox/icons/easytag.png>
+    [exec] (Firefox)      {firefox}          <~/.fluxbox/icons/apps/firefox.png>
+    [exec] (Gimp)         {gimp}             <~/.fluxbox/icons/apps/gimp.png>
+    [exec] (Skype)        {skypeforlinux}            <~/.fluxbox/icons/apps/skype.png>
+    [exec] (Transmission) {transmission-gtk} <~/.fluxbox/icons/apps/transmission.png>
+    [exec] (FileZilla)    {filezilla}        <~/.fluxbox/icons/apps/filezilla.png>
+    [exec] (Scribus)      {scribus}          <~/.fluxbox/icons/apps/scribus.png>
+    [exec] (EasyTAG)      {easytag}          <~/.fluxbox/icons/apps/easytag.png>
     [separator]
-    [exec] (VirtualBox)   {virtualbox}       <~/.fluxbox/icons/virtualbox.png>  
-    [exec] (X2Go Client)  {x2goclient}       <~/.fluxbox/icons/preferences-desktop-remote-desktop.png>
-    [exec] (Remmina)      {remmina}          <~/.fluxbox/icons/preferences-desktop-remote-desktop.png>
+    [exec] (VirtualBox)   {virtualbox}       <~/.fluxbox/icons/apps/virtualbox.png>  
+    [exec] (X2Go Client)  {x2goclient}       <~/.fluxbox/icons/apps/preferences-desktop-remote-desktop.png>
+    [exec] (Remmina)      {remmina}          <~/.fluxbox/icons/apps/preferences-desktop-remote-desktop.png>
     [separator]
     [exec] (Steam)        {steam}
     [exec] (FlightGear)   {fgrun}            <~/.fluxbox/more/flightgear.png>
     [exec] (Mumble)       {mumble}           <~/.fluxbox/more/mumble.png>
-    [exec] (RMD)          {gtk-recordmydesktop}  <~/.fluxbox/icons/gtk-recordmydesktop.png>    
+    [exec] (RMD)          {gtk-recordmydesktop}  <~/.fluxbox/icons/apps/gtk-recordmydesktop.png>    
   [end]
 
   [submenu] (Tools)
@@ -90,8 +90,8 @@
   
   [separator]
   [submenu] (Screen)
-    [exec] (to monitor) {xrandr --output DP-1   --auto --output LVDS-1 --off}
-    [exec] (to laptop)  {xrandr --output DP-1   --off  --output LVDS-1 --auto}
+    [exec] (to monitor) {xrandr --output DP-1   --auto --output LVDS-1 --off; fbsetbg -l}
+    [exec] (to laptop)  {xrandr --output DP-1   --off  --output LVDS-1 --autoi; fbsetbg -l}
   [end]
   [submenu] (Mouse)
     [exec] (is left)     {xmodmap -e "pointer =   3 2 1"}
